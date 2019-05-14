@@ -17,11 +17,11 @@ class Gestionnaire {
 	}
 	
 	listerContacts  () {
-	if (this.tabContacts.length === 0) 
-		console.log ("Aucun contact présent dans le gestionnaire");
-	else {
-		for (let i = 0; i < this.tabContacts.length; i++) {
-			console.log (this.tabContacts[i].decrire());
+		if (this.tabContacts.length === 0) 
+			console.log ("Aucun contact présent dans le gestionnaire");
+		else {
+			for (let i = 0; i < this.tabContacts.length; i++) {
+				console.log (this.tabContacts[i].decrire());
 			}
 		}
 	}
@@ -77,6 +77,7 @@ let choix = -1;
 while (choix !== 0) {
 	afficherMenu ();
 	choix = Number (prompt("Entrez votre choix :"));
+	console.log (choix);
 	switch (choix) {
 		case 1 : 
 			gestionnaireContacts.listerContacts ();
