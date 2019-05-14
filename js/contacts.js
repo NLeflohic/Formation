@@ -77,7 +77,6 @@ let choix = -1;
 while (choix !== 0) {
 	afficherMenu ();
 	choix = Number (prompt("Entrez votre choix :"));
-	console.log (choix);
 	switch (choix) {
 		case 1 : 
 			gestionnaireContacts.listerContacts ();
